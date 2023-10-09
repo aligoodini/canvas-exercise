@@ -7,17 +7,48 @@
     <style>
         body{
             height: 90vh;
-            display: grid; place-items: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
         }
         canvas{
             border: 2px solid #008080;
         }
+
+        .conatiner{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5rem;
+        }
+        input{
+            display: block;
+            margin-top: 1rem;
+        }
+        label{
+            display: block;
+            margin-top: 3rem;
+        }
     </style>
 </head>
 <body>
+
+    <div class="conatiner">
+        <form action="">
+            <label for="month">month : </label>
+            <input type="text" id="month">
+
+            <label for="sale">sale : </label>
+            <input type="num" id="sale">
+
+            <button type="submit" id="submit" style="margin-top: 3rem;">submit</button>
+            <button type="reset" id="reset">reset</button>
+        </form>
+    </div>
+
     <canvas width="1000" height="600"></canvas>
 
     <!-- <script src="staticChart.js"></script> -->
-    <script src="dynamicChart.js"></script>
+    <!-- <script src="dynamicChart.js"></script> -->
+    <script src="dynamicChartinput.js"></script>
 </body>
 </html>
