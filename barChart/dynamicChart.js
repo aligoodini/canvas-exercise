@@ -28,11 +28,15 @@ let shopData = [
 let x = 70;
 let width = 50 ;
 
-ctx.fillStyle = "#008080";
+ctx.font = "bold 18px tahoma"
 
 shopData.forEach(item => {
-
+    
+    ctx.fillStyle = "#008080";
     ctx.fillRect(x,canvas.height - item.sale , width , item.sale)
+
+    ctx.fillStyle = "red"
+    ctx.fillText(item.month , x , canvas.height - (item.sale+15) , 50)
 
     x += width+30
 })
