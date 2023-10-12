@@ -1,0 +1,23 @@
+body{
+    background-color: #f7f7f7;
+    height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;align-items: center;
+}
+
+form{
+    margin-bottom: 2rem;
+}
+button , input{
+    width: 8rem;
+    height: 2rem;
+}
+button{
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+}
+
+canvas{
+    border: 1px solid black;
+}
