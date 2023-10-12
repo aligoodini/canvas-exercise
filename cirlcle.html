@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <canvas width="600" height="600"></canvas>
+
+    <script>
+        let canvas = document.querySelector("canvas");
+        let ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "red"
+        
+        ctx.beginPath()
+        ctx.strokeStyle = "blue"
+        ctx.fillStyle = "blue"
+        ctx.lineWidth = 10
+        ctx.arc(canvas.width/2,300,60,0*Math.PI,1*Math.PI)
+        ctx.fill()
+        ctx.stroke()
+
+        // ctx.beginPath()
+        // ctx.strokeStyle = "red"
+        // ctx.lineWidth = 10
+        // ctx.arc(canvas.width/2,300,60,0.5*Math.PI,1*Math.PI)
+        // ctx.stroke()
+
+        ctx.beginPath()
+        ctx.strokeStyle = "green"
+        ctx.fillStyle = "green"
+        ctx.lineWidth = 10
+        ctx.arc(canvas.width/2,300,60,1*Math.PI,1.5*Math.PI)
+        ctx.fill()
+        ctx.stroke()
+
+        ctx.beginPath()
+        ctx.strokeStyle = "yellow"
+        ctx.lineWidth = 10
+        ctx.arc(canvas.width/2,300,60,1.5*Math.PI,2*Math.PI)
+        ctx.stroke()
+
+        ctx.beginPath()
+        ctx.strokeStyle = "yellow"
+        ctx.lineWidth = 10
+        ctx.arc(canvas.width/2,100,60,1.5*Math.PI,2*Math.PI , true)
+        ctx.stroke()
+
+    </script>
+</body>
+</html>
